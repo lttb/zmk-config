@@ -1,0 +1,13 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: lttb
+      url-base: https://github.com/lttb
+  projects:
+    - name: zmk
+      remote: lttb
+      revision: experimental
+      import: app/west.yml
+  self:
+    path: config
