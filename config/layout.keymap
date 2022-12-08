@@ -1,0 +1,122 @@
+// vim:fileencoding=utf-8:foldmethod=marker
+
+#define BASE 0
+#define SYMB 1
+#define NAVI 2
+#define NUMB 3
+
+// {{{ Base Layer
+
+#define _________________BASE_5_L1_________________ &kp Q        &kp W        &kp E       &kp R        &kp T
+#define _________________BASE_5_L2_________________ &lhm LCTRL A &lhm LALT S  &lhm LGUI D &lhm LSHFT F &kp G
+#define _________________BASE_5_L3_________________ &mt LSHFT Z  &lt NUMB X   &kp C       &kp V        &kp B
+
+#define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I       &kp O        &kp P
+#define _________________BASE_5_R2_________________ &kp H        &rhm LSHFT J &rhm LGUI K &rhm LALT L  &lhm LCTRL RET
+#define _________________BASE_5_R3_________________ &kp N        &kp M        &kp COMMA   &kp DOT      &mt LSHFT FSLH
+
+#define _________________BASE_6_L1_________________ &kp TAB       _________________BASE_5_L1_________________
+#define _________________BASE_6_L2_________________ &mt LCTRL ESC _________________BASE_5_L2_________________
+#define _________________BASE_6_L3_________________ &kp LSHFT     _________________BASE_5_L3_________________
+
+#define _________________BASE_6_R1_________________ _________________BASE_5_R1_________________ &kp BSPC
+#define _________________BASE_6_R2_________________ _________________BASE_5_R2_________________ &kp SQT
+#define _________________BASE_6_R3_________________ _________________BASE_5_R3_________________ &kp RSHIFT
+
+#define ____BASE_2_LT____                           &kp LGUI     &lt NAVI SPACE
+#define ____BASE_2_RT____                           &lt SYMB SEMI &mo 2
+
+#define __________BASE_3_LT___________              &kp LALT ____BASE_2_LT____
+#define __________BASE_3_RT___________              ____BASE_2_RT____ &kp LCTL
+
+// }}}
+
+// {{{ Symbols Layer
+
+#define KC_TAG &kp LA(N3)
+
+#define _________________SYMB_5_L1_________________ &kp EXCL  &kp LT    &kp LBRC  &kp DLLR  &kp STAR
+#define _________________SYMB_5_L2_________________ &kp GRAVE &kp LBKT  &kp LPAR  &kp EQUAL &kp AMPS
+#define _________________SYMB_5_L3_________________ &kp TILDE &kp DQT   &kp PLUS  &kp MINUS &kp UNDER
+
+#define _________________SYMB_5_R1_________________ &kp CARET &kp SLASH &kp RBRC  &kp GT    &kp BSLH
+#define _________________SYMB_5_R2_________________ &kp PIPE  &kp COLON &kp RPAR  &kp RBKT  &kp QMARK
+#define _________________SYMB_5_R3_________________ &kp PRCNT &kp AT    KC_TAG    &kp HASH  &trans
+
+#define _________________SYMB_6_L1_________________ &trans _________________SYMB_5_L1_________________
+#define _________________SYMB_6_L2_________________ &trans _________________SYMB_5_L2_________________
+#define _________________SYMB_6_L3_________________ &trans _________________SYMB_5_L3_________________
+
+#define _________________SYMB_6_R1_________________ _________________SYMB_5_R1_________________ &trans
+#define _________________SYMB_6_R2_________________ _________________SYMB_5_R2_________________ &trans
+#define _________________SYMB_6_R3_________________ _________________SYMB_5_R3_________________ &trans
+
+#define ____SYMB_2_LT____                           &trans &trans
+#define ____SYMB_2_RT____                           &trans &trans
+
+#define __________SYMB_3_LT___________              &trans ____SYMB_2_LT____
+#define __________SYMB_3_RT___________              ____SYMB_2_RT____ &trans
+
+// }}}
+
+// {{{ Navigation Layer
+
+#define TAB_BACK &kp LS(TAB)
+#define GLBR     &kp LG(LBKT)
+#define GRBR     &kp LG(RBKT)
+#define SGLBR    &kp LS(LG(LBKT))
+#define SGRBR    &kp LS(LG(RBKT))
+
+
+#define _________________NAVI_5_L1_________________ &kp Q           &sw_app          &sw_win         TAB_BACK       &trans
+#define _________________NAVI_5_L2_________________ &lhm LCTRL CAPS &lhm LALT PG_UP  &lhm LGUI PG_DN &lhm LSHFT TAB &caps_word
+#define _________________NAVI_5_L3_________________ &kp LG(Z)       &kp LG(X)        &kp LG(C)       &kp LG(V)      &kp LG(ESC)
+
+#define _________________NAVI_5_R1_________________ &trans &kp   DEL   &kp    UP   &kp BSPC  &trans
+#define _________________NAVI_5_R2_________________ GLBR   &kp   LEFT  &kp    DOWN &kp RIGHT &sw_lang
+#define _________________NAVI_5_R3_________________ GRBR   SGLBR SGRBR &trans &trans
+
+#define _________________NAVI_6_L1_________________ &trans _________________NAVI_5_L1_________________
+#define _________________NAVI_6_L2_________________ &trans _________________NAVI_5_L2_________________
+#define _________________NAVI_6_L3_________________ &trans _________________NAVI_5_L3_________________
+
+#define _________________NAVI_6_R1_________________ _________________NAVI_5_R1_________________ &trans
+#define _________________NAVI_6_R2_________________ _________________NAVI_5_R2_________________ &trans
+#define _________________NAVI_6_R3_________________ _________________NAVI_5_R3_________________ &trans
+
+#define ____NAVI_2_LT____                           &trans &trans
+#define ____NAVI_2_RT____                           &trans &trans
+
+#define __________NAVI_3_LT___________              &trans ____NAVI_2_LT____
+#define __________NAVI_3_RT___________              ____NAVI_2_RT____ &trans
+
+// }}}
+
+
+// {{{ Numeric Layer
+
+#define _________________NUMB_5_L1_________________ &trans         &kp F9       &kp F8       &kp F7        &kp F12
+#define _________________NUMB_5_L2_________________ &lhm LCTRL F13 &lhm LALT F4 &lhm LGUI F5 &lhm LSHFT F6 &kp F11
+#define _________________NUMB_5_L3_________________ &trans         &kp F3       &kp F2       &kp F1        &kp F10
+
+#define _________________NUMB_5_R1_________________ &trans        &kp N7        &kp N8       &kp N9        &trans
+#define _________________NUMB_5_R2_________________ &trans        &rhm LSHFT N4 &kp N5       &kp N6        &lhm LCTRL N0
+#define _________________NUMB_5_R3_________________ &kp N0        &kp N1        &kp N2       &kp N3        &trans
+
+#define _________________NUMB_6_L1_________________ &trans _________________NUMB_5_L1_________________
+#define _________________NUMB_6_L2_________________ &trans _________________NUMB_5_L2_________________
+#define _________________NUMB_6_L3_________________ &trans _________________NUMB_5_L3_________________
+
+#define _________________NUMB_6_R1_________________ _________________NUMB_5_R1_________________ &trans
+#define _________________NUMB_6_R2_________________ _________________NUMB_5_R2_________________ &trans
+#define _________________NUMB_6_R3_________________ _________________NUMB_5_R3_________________ &trans
+
+#define ____NUMB_2_LT____                           &trans &trans
+#define ____NUMB_2_RT____                           &trans &trans
+
+#define __________NUMB_3_LT___________              &trans ____NUMB_2_LT____
+#define __________NUMB_3_RT___________              ____NUMB_2_RT____ &trans
+
+// }}}
+
+
