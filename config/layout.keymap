@@ -4,6 +4,7 @@
 #define SYMB 1
 #define NAVI 2
 #define NUMB 3
+#define FUNC 4
 
 // {{{ Base Layer
 
@@ -119,4 +120,29 @@
 
 // }}}
 
+// {{{ Functional Layer
+#define BT(n) BT_SEL n
 
+#define _________________FUNC_5_L1_________________ &trans     &trans    &trans     &trans     &trans
+#define _________________FUNC_5_L2_________________ &trans     &kp K_PP  &kp K_PREV &kp K_NEXT &trans
+#define _________________FUNC_5_L3_________________ &bt BT_CLR &bt BT(0) &bt BT(1)  &bt BT(2)  &bt BT(3)
+
+#define _________________FUNC_5_R1_________________ &trans &trans       &trans       &trans     &trans
+#define _________________FUNC_5_R2_________________ &trans &kp K_VOL_DN &kp K_VOL_UP &kp K_MUTE &trans
+#define _________________FUNC_5_R3_________________ &trans &kp C_BRI_DN &kp C_BRI_UP &trans     &trans
+
+#define _________________FUNC_6_L1_________________ &trans _________________FUNC_5_L1_________________
+#define _________________FUNC_6_L2_________________ &trans _________________FUNC_5_L2_________________
+#define _________________FUNC_6_L3_________________ &trans _________________FUNC_5_L3_________________
+
+#define _________________FUNC_6_R1_________________ _________________FUNC_5_R1_________________ &trans
+#define _________________FUNC_6_R2_________________ _________________FUNC_5_R2_________________ &trans
+#define _________________FUNC_6_R3_________________ _________________FUNC_5_R3_________________ &trans
+
+#define ____FUNC_2_LT____                           &trans &trans
+#define ____FUNC_2_RT____                           &trans &trans
+
+#define __________FUNC_3_LT___________              &trans ____FUNC_2_LT____
+#define __________FUNC_3_RT___________              ____FUNC_2_RT____ &trans
+
+//
