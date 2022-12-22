@@ -18,7 +18,12 @@
 };
 
 &lt {
-  flavor = "hold-preferred";
+  tapping-term-ms = <TAPPING_TERM>;
+  quick-tap-ms = <QUICK_TAP>;
+  global-quick-tap;
+};
+
+&mt {
   tapping-term-ms = <TAPPING_TERM>;
   quick-tap-ms = <QUICK_TAP>;
   global-quick-tap;
@@ -27,7 +32,7 @@
 / {
         combos {
           compatible = "zmk,combos";
-          combo_esc {
+          combo_fun {
             timeout-ms = <50>;
             key-positions = <37 40>;
             bindings = <&mo FUNC>;
@@ -54,6 +59,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <6 7 8 9 10 11 15 16 18 19 20 21 22 23 30 31 32 33 34>;
           };
@@ -65,6 +71,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <TAPPING_TERM>;
             quick-tap-ms = <QUICK_TAP>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 19 20 21 22 24 25 26 27 28 29>;
           };
@@ -103,6 +110,16 @@
   _________________BASE_6_L2_________________  _________________BASE_6_R2_________________
   _________________BASE_6_L3_________________  _________________BASE_6_R3_________________
                __________BASE_3_LT___________  __________BASE_3_RT___________
+                        >;
+                };
+
+                windows_layer {
+                        label = "WINDOWS";
+                        bindings = <
+  _________________WIND_6_L1_________________  _________________WIND_6_R1_________________
+  _________________WIND_6_L2_________________  _________________WIND_6_R2_________________
+  _________________WIND_6_L3_________________  _________________WIND_6_R3_________________
+               __________WIND_3_LT___________  __________WIND_3_RT___________
                         >;
                 };
 
