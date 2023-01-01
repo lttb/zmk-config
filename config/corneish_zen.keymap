@@ -20,7 +20,6 @@
 &lt {
   tapping-term-ms = <TAPPING_TERM>;
   quick-tap-ms = <QUICK_TAP>;
-  global-quick-tap;
 };
 
 &mt {
