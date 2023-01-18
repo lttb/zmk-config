@@ -11,6 +11,12 @@
 #define HRMR(k1,k2,k3,k4) &rhm RGUI k1  &rhm RCTRL k2  &rhm RALT k3  &rhm RSHFT k4
 #define HT(k1,k2,k3,k4) &ht LG(V) k1  &ht LG(C) k2  &ht LG(X) k3  &ht LG(Z) k4
 
+// -----------------------------------------------------------------------------------------
+// | TAB   0 | Q  1 | W   2 | E    3 | R    4 | T    5 |   | Y    6 | U    7 | I    8 | O  9 | P 10 | BKSP 11 |
+// | CTRL 12 | A 13 | S  14 | D   15 | F   16 | G   17 |   | H   18 | J   19 | K   20 | L 21 | ; 22 |  '   23 |
+// | SHFT 24 | Z 25 | X  26 | C   27 | V   28 | B   29 |   | N   30 | M   31 | ,   32 | . 33 | / 34 | ESC  35 |
+//                          | GUI 36 | LWR 37 | SPC 38 |   | ENT 39 | RSE 40 | ALT 41 |
+
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -35,6 +41,11 @@
             timeout-ms = <50>;
             key-positions = <37 40>;
             bindings = <&mo FUNC>;
+          };
+          combo_lang {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp LG(SPACE)>;
           };
         };
         

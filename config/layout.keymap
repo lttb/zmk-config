@@ -100,9 +100,9 @@
 #define _________________NAVI_5_L2_________________ &lhm LCTRL CAPS &lhm LALT PG_UP  &lhm LGUI PG_DN &lhm LSHFT TAB &caps_word
 #define _________________NAVI_5_L3_________________ &kp LG(Z)       &kp LG(X)        &kp LG(C)       &kp LG(V)      &kp LG(ESC)
 
-#define _________________NAVI_5_R1_________________ &trans &kp   DEL   &kp    UP   &kp BSPC  &trans
-#define _________________NAVI_5_R2_________________ GLBR   &kp   LEFT  &kp    DOWN &kp RIGHT &sw_lang
-#define _________________NAVI_5_R3_________________ GRBR   SGLBR SGRBR &trans &trans
+#define _________________NAVI_5_R1_________________ &sw_lang &kp   DEL   &kp    UP   &kp BSPC  &trans
+#define _________________NAVI_5_R2_________________ GLBR     &kp   LEFT  &kp    DOWN &kp RIGHT &trans
+#define _________________NAVI_5_R3_________________ GRBR     SGLBR       SGRBR       &trans    &trans   
 
 #define _________________NAVI_6_L1_________________ &trans _________________NAVI_5_L1_________________
 #define _________________NAVI_6_L2_________________ &trans _________________NAVI_5_L2_________________
