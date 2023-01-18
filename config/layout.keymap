@@ -10,11 +10,11 @@
 // {{{ Base Layer
 
 #define _________________BASE_5_L1_________________ &kp Q        &kp W        &kp E       &kp R        &kp T
-#define _________________BASE_5_L2_________________ &lhm LCTRL A &lhm LALT S  &lhm LGUI D &lhm LSHFT F &kp G
-#define _________________BASE_5_L3_________________ &mt LSHFT Z  &lt NUMB X   &kp C       &kp V        &kp B
+#define _________________BASE_5_L2_________________ &kp A        &kp S        &kp D       &kp F        &kp G
+#define _________________BASE_5_L3_________________ &kp Z        &lt  NUMB X  &kp C       &kp V        &kp B
 
 #define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I       &kp O        &kp P
-#define _________________BASE_5_R2_________________ &kp H        &rhm LSHFT J &rhm LGUI K &rhm LALT L  &lhm LCTRL RET
+#define _________________BASE_5_R2_________________ &kp H        &kp J        &kp K       &kp L        &kp RET
 #define _________________BASE_5_R3_________________ &kp N        &kp M        &kp COMMA   &kp DOT      &mt LSHFT FSLH
 
 #define _________________BASE_6_L1_________________ &kp TAB       _________________BASE_5_L1_________________
@@ -97,12 +97,12 @@
 
 
 #define _________________NAVI_5_L1_________________ &kp Q           &sw_app          &sw_win         TAB_BACK       &trans
-#define _________________NAVI_5_L2_________________ &lhm LCTRL CAPS &lhm LALT PG_UP  &lhm LGUI PG_DN &lhm LSHFT TAB &caps_word
+#define _________________NAVI_5_L2_________________ &lhm LCTRL CAPS &lhm LALT PG_UP  &lhm LGUI PG_DN &lhm LSHFT TAB &sw_lang
 #define _________________NAVI_5_L3_________________ &kp LG(Z)       &kp LG(X)        &kp LG(C)       &kp LG(V)      &kp LG(ESC)
 
-#define _________________NAVI_5_R1_________________ &sw_lang &kp   DEL   &kp    UP   &kp BSPC  &trans
-#define _________________NAVI_5_R2_________________ GLBR     &kp   LEFT  &kp    DOWN &kp RIGHT &trans
-#define _________________NAVI_5_R3_________________ GRBR     SGLBR       SGRBR       &trans    &trans   
+#define _________________NAVI_5_R1_________________ &trans   &kp   DEL   &kp    UP   &kp BSPC   &trans
+#define _________________NAVI_5_R2_________________ GLBR     &kp   LEFT  &kp    DOWN &kp RIGHT  &trans
+#define _________________NAVI_5_R3_________________ GRBR     SGLBR       SGRBR       &caps_word &trans   
 
 #define _________________NAVI_6_L1_________________ &trans _________________NAVI_5_L1_________________
 #define _________________NAVI_6_L2_________________ &trans _________________NAVI_5_L2_________________
