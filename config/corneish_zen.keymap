@@ -36,7 +36,7 @@
   global-quick-tap;
 };
 
-#define COMBO_TERM 50
+#define COMBO_TERM 30
 
 / {
         combos {
@@ -53,25 +53,21 @@
             timeout-ms = <COMBO_TERM>;
             key-positions = <13 22>;
             bindings = <&sk LCTRL>;
-            slow-release;
           };
           combo_sl {
             timeout-ms = <COMBO_TERM>;
             key-positions = <14 21>;
             bindings = <&sk LALT>;
-            slow-release;
           };
           combo_dk {
             timeout-ms = <COMBO_TERM>;
             key-positions = <15 20>;
             bindings = <&sk LGUI>;
-            slow-release;
           };
           combo_fj {
             timeout-ms = <COMBO_TERM>;
             key-positions = <16 19>;
             bindings = <&sk LSHIFT>;
-            slow-release;
           };
 
           // Left Half {{{
@@ -79,37 +75,31 @@
             timeout-ms = <COMBO_TERM>;
             key-positions = <13 14>;
             bindings = <&sk LA(LCTRL)>;
-            slow-release;
           };
           combo_ad {
             timeout-ms = <COMBO_TERM>;
             key-positions = <13 15>;
             bindings = <&sk LG(LCTRL)>;
-            slow-release;
           };
           combo_af {
             timeout-ms = <COMBO_TERM>;
             key-positions = <13 16>;
             bindings = <&sk LS(LCTRL)>;
-            slow-release;
           };
           combo_sd {
             timeout-ms = <COMBO_TERM>;
             key-positions = <14 15>;
             bindings = <&sk LG(LALT)>;
-            slow-release;
           };
           combo_sf {
             timeout-ms = <COMBO_TERM>;
             key-positions = <14 16>;
             bindings = <&sk LS(LALT)>;
-            slow-release;
           };
           combo_df {
             timeout-ms = <COMBO_TERM>;
             key-positions = <15 16>;
             bindings = <&sk LS(LGUI)>;
-            slow-release;
           };
           // }}}
 
@@ -118,37 +108,31 @@
             timeout-ms = <COMBO_TERM>;
             key-positions = <19 20>;
             bindings = <&sk LG(LSHIFT)>;
-            slow-release;
           };
           combo_jl {
             timeout-ms = <COMBO_TERM>;
             key-positions = <19 21>;
             bindings = <&sk LA(LSHIFT)>;
-            slow-release;
           };
           combo_j_scln {
             timeout-ms = <COMBO_TERM>;
             key-positions = <19 22>;
             bindings = <&sk LC(LSHIFT)>;
-            slow-release;
           };
           combo_kl {
             timeout-ms = <COMBO_TERM>;
             key-positions = <20 21>;
             bindings = <&sk LA(LGUI)>;
-            slow-release;
           };
           combo_k_scln {
             timeout-ms = <COMBO_TERM>;
             key-positions = <20 22>;
             bindings = <&sk LC(LGUI)>;
-            slow-release;
           };
           combo_l_scln {
             timeout-ms = <COMBO_TERM>;
             key-positions = <21 22>;
             bindings = <&sk LC(LALT)>;
-            slow-release;
           };
           // }}}
 

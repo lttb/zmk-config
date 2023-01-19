@@ -11,7 +11,7 @@
 
 #define _________________BASE_5_L1_________________ &kp Q        &kp W        &kp E       &kp R        &kp T
 #define _________________BASE_5_L2_________________ &kp A        &kp S        &kp D       &kp F        &kp G
-#define _________________BASE_5_L3_________________ &kp Z        &lt  NUMB X  &kp C       &kp V        &kp B
+#define _________________BASE_5_L3_________________ &mt LSHFT Z  &lt NUMB X   &kp C       &kp V        &kp B
 
 #define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I       &kp O        &kp P
 #define _________________BASE_5_R2_________________ &kp H        &kp J        &kp K       &kp L        &kp RET
@@ -23,10 +23,10 @@
 
 #define _________________BASE_6_R1_________________ _________________BASE_5_R1_________________ &kp BSPC
 #define _________________BASE_6_R2_________________ _________________BASE_5_R2_________________ &kp SQT
-#define _________________BASE_6_R3_________________ _________________BASE_5_R3_________________ &kp RSHIFT
+#define _________________BASE_6_R3_________________ _________________BASE_5_R3_________________ &kp SEMI
 
-#define ____BASE_2_LT____                           &kp LGUI     &lt NAVI SPACE
-#define ____BASE_2_RT____                           &lt SYMB SEMI &kp LC(LA(LG(LSHFT)))
+#define ____BASE_2_LT____                           &kp LGUI   &lt NAVI SPACE
+#define ____BASE_2_RT____                           &mo SYMB   &kp LC(LA(LG(LSHFT)))
 
 #define __________BASE_3_LT___________              &kp LALT ____BASE_2_LT____
 #define __________BASE_3_RT___________              ____BASE_2_RT____ &kp LCTRL
@@ -119,7 +119,6 @@
 #define __________NAVI_3_RT___________              ____NAVI_2_RT____ &trans
 
 // }}}
-
 
 // {{{ Numeric Layer
 
