@@ -31,12 +31,10 @@
 };
 
 &mt {
-  tapping-term-ms = <TAPPING_TERM>;
-  quick-tap-ms = <QUICK_TAP>;
   global-quick-tap;
 };
 
-#define COMBO_TERM 30
+#define COMBO_TERM 25
 
 / {
         combos {
