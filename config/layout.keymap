@@ -9,13 +9,13 @@
 
 // {{{ Base Layer
 
-#define _________________BASE_5_L1_________________ &kp Q        &kp W        &kp E       &kp R        &kp T
+#define _________________BASE_5_L1_________________ &lt NUMB Q   &kp W        &kp E       &kp R        &kp T
 #define _________________BASE_5_L2_________________ &kp A        &kp S        &kp D       &kp F        &kp G
-#define _________________BASE_5_L3_________________ &mt LSHFT Z  &lt NUMB X   &kp C       &kp V        &kp B
+#define _________________BASE_5_L3_________________ &mt LSHFT Z  &ht LALT X   &ht LGUI C  &kp V        &kp B
 
-#define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I       &kp O        &kp P
-#define _________________BASE_5_R2_________________ &kp H        &kp J        &kp K       &kp L        &kp RET
-#define _________________BASE_5_R3_________________ &kp N        &kp M        &kp COMMA   &kp DOT      &mt LSHFT FSLH
+#define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I           &kp O         &lt NUMB P
+#define _________________BASE_5_R2_________________ &kp H        &kp J        &kp K           &kp L         &kp RET
+#define _________________BASE_5_R3_________________ &kp N        &kp M        &ht LGUI COMMA  &ht LALT DOT  &mt LSHFT FSLH
 
 #define _________________BASE_6_L1_________________ &kp TAB       _________________BASE_5_L1_________________
 #define _________________BASE_6_L2_________________ &mt LCTRL ESC _________________BASE_5_L2_________________
@@ -51,7 +51,7 @@
 #define _________________WIND_6_R2_________________ _________________WIND_5_R2_________________ &trans
 #define _________________WIND_6_R3_________________ _________________WIND_5_R3_________________ &trans
 
-#define ____WIND_2_LT____                           &kp SPACE &mt LCTRL SPACE 
+#define ____WIND_2_LT____                           &kp SPACE &mt LCTRL SPACE
 #define ____WIND_2_RT____                           &trans          &mo NAVI
 
 #define __________WIND_3_LT___________              &trans            ____WIND_2_LT____
@@ -63,13 +63,13 @@
 
 #define KC_TAG &kp LA(N3)
 
-#define _________________SYMB_5_L1_________________ &kp EXCL  &kp LT    &kp LBRC  &kp DLLR  &kp STAR
-#define _________________SYMB_5_L2_________________ &kp GRAVE &kp LBKT  &kp LPAR  &kp EQUAL &kp AMPS
+#define _________________SYMB_5_L1_________________ &kp EXCL  &kp AT    &kp LBRC  &kp DLLR  &kp PRCNT
+#define _________________SYMB_5_L2_________________ &kp GRAVE &kp LBKT  &kp LPAR  &kp EQUAL &kp COLON
 #define _________________SYMB_5_L3_________________ &kp TILDE &kp DQT   &kp PLUS  &kp MINUS &kp UNDER
 
-#define _________________SYMB_5_R1_________________ &kp CARET &kp SLASH &kp RBRC  &kp GT    &kp BSLH
+#define _________________SYMB_5_R1_________________ &kp CARET &kp AMPS  &kp RBRC  &kp GT    &kp BSLH
 #define _________________SYMB_5_R2_________________ &kp PIPE  &kp COLON &kp RPAR  &kp RBKT  &kp QMARK
-#define _________________SYMB_5_R3_________________ &kp PRCNT &kp AT    KC_TAG    &kp HASH  &kp SEMI
+#define _________________SYMB_5_R3_________________ &kp HASH  KC_TAG    &kp SEMI  &trans    &trans
 
 #define _________________SYMB_6_L1_________________ &trans _________________SYMB_5_L1_________________
 #define _________________SYMB_6_L2_________________ &trans _________________SYMB_5_L2_________________
@@ -96,13 +96,13 @@
 #define SGRBR    &kp LS(LG(RBKT))
 
 
-#define _________________NAVI_5_L1_________________ &kp Q           &sw_app          &sw_win         TAB_BACK       &trans
-#define _________________NAVI_5_L2_________________ &lhm LCTRL CAPS &lhm LALT PG_UP  &lhm LGUI PG_DN &lhm LSHFT TAB &sw_lang
-#define _________________NAVI_5_L3_________________ &kp LG(Z)       &kp LG(X)        &kp LG(C)       &kp LG(V)      &kp LG(ESC)
+#define _________________NAVI_5_L1_________________ &kp Q       &sw_app    &sw_win     TAB_BACK     &trans
+#define _________________NAVI_5_L2_________________ &sk LCTRL   &sk LALT   &sk LGUI    &sk LSHFT    &trans
+#define _________________NAVI_5_L3_________________ &kp LG(Z)   &kp LG(X)  &kp LG(C)   &kp LG(V)    &kp LG(ESC)
 
-#define _________________NAVI_5_R1_________________ &trans   &kp   DEL   &kp    UP   &kp BSPC   &trans
-#define _________________NAVI_5_R2_________________ GLBR     &kp   LEFT  &kp    DOWN &kp RIGHT  &trans
-#define _________________NAVI_5_R3_________________ GRBR     SGLBR       SGRBR       &caps_word &trans   
+#define _________________NAVI_5_R1_________________ &sw_lang    &kp DEL    &kp UP      &kp BSPC     &trans
+#define _________________NAVI_5_R2_________________ &trans      &kp LEFT   &kp DOWN    &kp RIGHT    &trans
+#define _________________NAVI_5_R3_________________ &caps_word  SGLBR      SGRBR       GLBR         GRBR
 
 #define _________________NAVI_6_L1_________________ &trans _________________NAVI_5_L1_________________
 #define _________________NAVI_6_L2_________________ &trans _________________NAVI_5_L2_________________
