@@ -97,7 +97,7 @@
 
 
 #define _________________NAVI_5_L1_________________ &kp Q       &sw_app    &sw_win     TAB_BACK     &trans
-#define _________________NAVI_5_L2_________________ &sk LCTRL   &sk LALT   &sk LGUI    &sk LSHFT    &trans
+#define _________________NAVI_5_L2_________________ &kp LCTRL   &kp LALT   &kp LGUI    &kp LSHFT    &trans
 #define _________________NAVI_5_L3_________________ &kp LG(Z)   &kp LG(X)  &kp LG(C)   &kp LG(V)    &kp LG(ESC)
 
 #define _________________NAVI_5_R1_________________ &sw_lang    &kp DEL    &kp UP      &kp BSPC     &trans
