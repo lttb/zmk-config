@@ -6,7 +6,7 @@
 
 #include "layout.keymap"
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 170
 #define QUICK_TAP    150
 
 #define HRML(k1,k2,k3,k4) &lhm LSHFT k1  &lhm LALT k2  &lhm LCTRL k3  &lhm LGUI k4
@@ -38,8 +38,17 @@
 #define LONG_COMBO_TERM 50
 
 / {
+        conditional_layers {
+            compatible = "zmk,conditional-layers";
+            tri_layer {
+                if-layers = <NAVI SYMB>;
+                then-layer = <NUMB>;
+            };
+        };
+
         combos {
           compatible = "zmk,combos";
+          
           combo_fun {
             timeout-ms = <COMBO_TERM>;
             key-positions = <37 40>;

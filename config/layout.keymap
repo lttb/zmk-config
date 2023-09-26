@@ -9,11 +9,11 @@
 
 // {{{ Base Layer
 
-#define _________________BASE_5_L1_________________ &lt NUMB Q   &kp W        &kp E       &kp R        &kp T
+#define _________________BASE_5_L1_________________ &kp Q        &kp W        &kp E       &kp R        &kp T
 #define _________________BASE_5_L2_________________ &kp A        &kp S        &kp D       &kp F        &kp G
-#define _________________BASE_5_L3_________________ &mt LSHFT Z  &ht LALT X   &ht LGUI C  &kp V        &kp B
+#define _________________BASE_5_L3_________________ &kp Z        &kp X        &kp C       &kp V        &kp B
 
-#define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I           &kp O         &lt NUMB P
+#define _________________BASE_5_R1_________________ &kp Y        &kp U        &kp I           &kp O         &kp P
 #define _________________BASE_5_R2_________________ &kp H        &kp J        &kp K           &kp L         &kp RET
 #define _________________BASE_5_R3_________________ &kp N        &kp M        &ht LGUI COMMA  &ht LALT DOT  &mt LSHFT FSLH
 
