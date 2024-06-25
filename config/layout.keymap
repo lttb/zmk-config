@@ -122,13 +122,14 @@
 
 // {{{ Numeric Layer
 
-#define _________________NUMB_5_L1_________________ &kp N1    &kp N2    &kp N3   &kp N4    &kp N5
-#define _________________NUMB_5_L2_________________ &sk LCTRL &sk LALT  &sk LGUI &sk LSHFT &sk F11
-#define _________________NUMB_5_L3_________________ &kp F1    &kp F2    &kp F3   &kp F4    &kp F5
 
-#define _________________NUMB_5_R1_________________ &kp N6    &kp N7    &kp N8   &kp N9    &kp N0
-#define _________________NUMB_5_R2_________________ &kp F12   &sk LSHFT &sk LGUI &sk LALT  &sk LCTRL
-#define _________________NUMB_5_R3_________________ &kp F6    &kp F7    &kp F8   &kp F9    &kp F10
+#define _________________NUMB_5_L1_________________ &trans         &kp F7       &kp F8       &kp F9        &kp F12
+#define _________________NUMB_5_L2_________________ &lhm LCTRL F13 &lhm LALT F4 &lhm LGUI F5 &lhm LSHFT F6 &kp F11
+#define _________________NUMB_5_L3_________________ &trans         &kp F1       &kp F2       &kp F3        &kp F10
+
+#define _________________NUMB_5_R1_________________ &trans        &kp N7        &kp N8       &kp N9        &trans
+#define _________________NUMB_5_R2_________________ &trans        &kp N4        &kp N5       &kp N6        &kp N0
+#define _________________NUMB_5_R3_________________ &kp N0        &kp N1        &kp N2       &kp N3        &trans
 
 #define _________________NUMB_6_L1_________________ &trans _________________NUMB_5_L1_________________
 #define _________________NUMB_6_L2_________________ &trans _________________NUMB_5_L2_________________
